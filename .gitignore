@@ -1,0 +1,77 @@
+# Ransomware Prevention
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+
+# Python
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Virtual environments
+
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+
+*.log
+logs/
+
+# Temporary files
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDEs & editors
+
+.vscode/
+.idea/
+*.code-workspace
+
+# Build / distribution
+
+build/
+dist/
+*.egg-info/
+
+# Coverage
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS-specific
+
+Desktop.ini
+
+# Project-generated data
+
+data/
+output/
+reports/
+
+# Local test files
+
+tests/local/
+sandbox/
