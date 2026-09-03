@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -uo pipefail
+set -euo pipefail
 
  if [ $# -eq 0 ]; then
     echo "You don't give any file path to backup. Using default path: ./sensitive-data"
@@ -19,7 +19,7 @@ if [ ! -d "./backups" ]; then
     mkdir "./backups"
 fi
 
-date=$(date +%Y-%m-%d)
+date=$(date +%Y-%m-%d_%Hh_%Mmin_%Ss)
 if tar -czf "./backups/backup_zip_file_${date}_archive.tar.gz" "$filePath"; then
     echo "Backup successful."
 else

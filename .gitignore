@@ -75,3 +75,5 @@ reports/
 
 tests/local/
 sandbox/
+backups/
+sensitive-data/
